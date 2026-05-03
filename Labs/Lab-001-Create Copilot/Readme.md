@@ -1,5 +1,7 @@
 # Create Copilot
 
+## Crear un Entorno
+
 * Ir a URL
 
 > https://admin.powerplatform.microsoft.com/
@@ -20,6 +22,8 @@
 > https://copilotstudio.microsoft.com/environments/<ID_ENVIROMENT>/home
 
 * Elegir menu agentes para ver agentes existentes
+
+## Crear un Agente
 
 * Crear un agente
 
@@ -53,6 +57,8 @@ Crear un asistente para ayudar a los empleados a gestionar sus rendiciones de ga
 ¿Cuál es el límite de gasto para una estadía en hotel?
 ```
 
+## Agregar Temas
+
 * Agregar temas
   * Nombre
     * Pregunta sobre contacto de gastos
@@ -67,10 +73,96 @@ Crear un asistente para ayudar a los empleados a gestionar sus rendiciones de ga
 A quien contacto para registrar mis gastos?
 ```
 
+## Agregar conocimiento
 
+* Ir a la pagina inicial del agente
+* Ir a agregar Conocimiento/Knowledge
+* Descargar este archivo
+ *  https://raw.githubusercontent.com/estebancalabria/pl-7008/refs/heads/main/Labs/Lab-001-Create%20Copilot/politica-gastos.md
+*  Subir el archivo y agregarlo al agente
 
-Pregunta sobre contacto sobre gastos
+## Configurar el agente
+
+* Ir arriba a donde dice Configuracion/Settings
+ * Ir a seguridad...Autenticacion..
+  * Poner Sin Autenticacion
+
+* Ir a la opcion de Canales/Channels
+* Elegir la opcin de Sitio web de Prueba
+* Configurar y copiar el link del sitio
+* Probar una vez que este subido el archivo de conocimiento
+* ** Publicar agente con publish**
+
+>[!NOTE]
+>El paso de publish es super importante para poder usarlo en sitio web
+
+## Probar agente en su sitio web PErsonalizado
+
+* Abrir el link a su propia web de prueba
+* Probar este prompt
+
+```
+Como registro mis gastos de hoteles? Cuanto es el maxmo?
 ```
 
-* 
+## Usarlo en tu propio sitio web
 
+* Abrir canales
+* Elegir Aplicacion Web
+* Copiar la URL del iframe
+* Reemplazarla en el siguietne codigo
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #chatbot {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 350px;
+            height: 500px;
+            display: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        #botonChat {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #0078d4;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <button id="botonChat" onclick="toggleChat()">💬</button>
+
+    <div id="chatbot">
+        <iframe src="TU_URL_DEL_IFRAME" width="100%" height="100%"></iframe>
+    </div>
+
+    <script>
+        function toggleChat() {
+            const chat = document.getElementById("chatbot");
+            chat.style.display = chat.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</body>
+
+</html>
+```
