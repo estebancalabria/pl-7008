@@ -336,6 +336,5 @@ Al finalizar este módulo podrás:
 # Conclusión
 
 Microsoft Copilot Studio permite construir agentes conversacionales avanzados utilizando temas, nodos, ramificaciones, variables y automatizaciones. Gracias a la integración con inteligencia artificial, Power Automate y Bot Framework, es posible crear experiencias conversacionales modernas, escalables y personalizadas capaces de integrarse con sistemas empresariales y resolver múltiples escenarios de atención y automatización.
-
-```
+``
 ```
