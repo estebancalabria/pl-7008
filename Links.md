@@ -7,3 +7,7 @@
 * https://admin.powerplatform.microsoft.com/
 * https://copilotstudio.microsoft.com
 * https://make.powerapps.com
+
+* Contactos:
+  * https://www.instagram.com/mct.esteban.calabria/
+  * https://www.linkedin.com/in/esteban-calabria-7a44401a/
