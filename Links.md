@@ -9,7 +9,9 @@
   * https://copilotstudio.microsoft.com
   * https://make.powerapps.com
 * Referencia Funciones Powerapps
- * https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-copilot-studio
+  * https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-copilot-studio
+* Adaptative Cards
+  * https://adaptivecards.io/
 * Contactos:
   * https://www.instagram.com/mct.esteban.calabria/
   * https://www.linkedin.com/in/esteban-calabria-7a44401a/
